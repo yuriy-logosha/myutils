@@ -8,5 +8,5 @@ setup(
     license='Apache License 2.0',
     description='Libraries that could be used in every project.',
     summary='Keep it as simple as possible.',
-    homepage=''
+    homepage='https://github.com/yuriy-logosha/myutils/README.md'
 )
