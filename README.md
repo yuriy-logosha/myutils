@@ -17,6 +17,13 @@ Add into `requirements.txt` file:
 
 ### Examples of usage
 ````
+from myutils import *
+...
+myrequests.get(...)
+...
+````
+or
+````
 from myfile import json_from_file, json_to_file
 from myparser import MyHTMLParser
 from myrequests import get as _get
