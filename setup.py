@@ -9,6 +9,7 @@ setup(
     author='Iurii Logosha',
     author_email='yuriy.logosha@gmail.com',
     license='BSD-2-Clause',
-    description='Libraries that could be used in every project.',
+    long_description='Libraries that could be used in every project.',
+    description='Utils',
     url='https://github.com/yuriy-logosha/myutils/README.md'
 )
