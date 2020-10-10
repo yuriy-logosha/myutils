@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+
 from setuptools import setup
 
 setup(
@@ -5,8 +8,7 @@ setup(
     version="1.0",
     author='Iurii Logosha',
     author_email='yuriy.logosha@gmail.com',
-    license='Apache License 2.0',
+    license='BSD-2-Clause',
     description='Libraries that could be used in every project.',
-    summary='Keep it as simple as possible.',
-    homepage='https://github.com/yuriy-logosha/myutils/README.md'
+    url='https://github.com/yuriy-logosha/myutils/README.md'
 )
