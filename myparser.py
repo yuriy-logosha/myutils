@@ -33,10 +33,12 @@ class MyHTMLParser(HTMLParser):
         super(self.__class__, self).handle_starttag(tag, attrs)
 
     def handle_endtag(self, tag):
+        if tag == 'br':
+            return
         i = len(self.path) - 1 - self.path[::-1].index(tag)
         self.path = self.path[:i]
-        self.is_current_tag_valid = self.valid(tag)
-        self.current_tag = None
+        self.current_tag = self.path[-1] if self.path else None
+        self.is_current_tag_valid = self.valid(self.current_tag)
         if not self.is_current_tag_valid:
             return
         super(self.__class__, self).handle_endtag(tag)
@@ -63,7 +65,7 @@ class MyHTMLParser(HTMLParser):
                 self.data[idx] = (last[0], last[1], data)
 
     def valid(self, tag):
-        if len(self.valid_tags) > 0:
+        if self.valid_tags:
             return True if tag in self.valid_tags else False
         return True
 
